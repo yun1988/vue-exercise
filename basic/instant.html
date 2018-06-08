@@ -112,12 +112,24 @@
                     {{text}}
                 </div>
 
+                <div id="app2">
+                    {{text}}
+                </div>
+
+
 
                 <script>
                     var app = new Vue({
                         el: '#app',
                         data: {
                             text: '這是一段話'
+                        }
+                    })
+
+                    var app = new Vue({
+                        el: '#app2',
+                        data: {
+                            text: '這是第二段話'
                         }
                     })
 
