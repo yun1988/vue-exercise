@@ -151,8 +151,11 @@
 
                 <div id="app">
                     {{message }}
-                    <div v-html="message"></div>
+
+                    <div v-text="message"></div>
                     <input type="text" v-model="message">
+
+                    <div v-html="message"></div>
                 </div>
 
                 <script>
