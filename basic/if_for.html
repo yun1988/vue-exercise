@@ -148,10 +148,10 @@
                 </div>
 
                 <div id="app">
-                    <!-- <pre>{{list}}</pre>-->
+
                     <ul>
-                        <li v-for="item in list">
-                            {{item.name}} 年齡是 {{ item.age}} 歲
+                        <li v-for="(item, index ) in list">
+                            {{index +1}} {{item.name}} 年齡是 {{ item.age}} 歲
                         </li>
                     </ul>
                 </div>
