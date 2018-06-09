@@ -150,8 +150,8 @@
                 </div>
 
                 <div id="app">
-                    <input type="text" class="form-control" v-on:keyup.enter="reverseText" v-model="text">
-                    <a href="#" class="btn btn-primary mt-1" v-on:click.prevent="reverseText">反轉字串</a>
+                    <input type="text" class="form-control" @keyup.enter="reverseText" v-model="text">
+                    <a href="#" class="btn btn-primary mt-1" @click.prevent="reverseText">反轉字串</a>
                     <div class="mt-3">
                         {{ newText }}
                     </div>
@@ -183,10 +183,10 @@ reverseText(event) {
 
 <input type="text" class="form-control" v-model="text" v-on:keyup.enter="reverseText">
 <a href="#" class="btn btn-primary mt-1" v-on:click.prevent="reverseText">反轉字串</a>
-<div class="mt-3">
-  {{ newText }}
-</div>
--->
+                    <div class="mt-3">
+                        {{ newText }}
+                    </div>
+                    -->
             </div>
         </div>
     </div>
